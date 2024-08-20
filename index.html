@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Dasar</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+
+    <!-- <script>
+      console.log("Apa Kabar Dunia?");
+
+      var Mobil = ["Avanza", "Ayla", "Fortuner"];
+      console.log(Mobil);
+
+      var listMobil = [
+        { name: "Avanza", warna: "Hitam" },
+        { name: "Ayla", warna: "Biru" },
+        { name: "Fortuner", warna: "Merah" },
+      ];
+      console.log(listMobil);
+      console.log(typeof listMobil);
+    </script> -->
+
+    <!-- <div id="data">
+      <script>
+        for (var i = 0; i < 5; i++) {
+          console.log("for: Saya bernilai " + i);
+        }
+
+        // ingin menampilkan output for loop
+        var text = "";
+        for (var i = 0; i < 5; i++) {
+          text += "Nilai saat ini " + i + "<br>";
+          document.getElementById("data").innerHTML = text;
+        }
+
+        // Infinity loop
+        // for (var = o; i >= 5; i++) {
+        //     console.log("infinity looping" + i);
+        // }
+      </script>
+    </div> -->
+
+    <!-- <div id="data1">
+      <script>
+        var j = 0;
+        while (j < 5) {
+          console.log("While : Saya bernilai " + j);
+          j++;
+        }
+        // ingin menampilkan output while loop
+        const outputDiv = document.getElementById("data1");
+
+        let q = 0;
+        let result = "";
+
+        while (q < 5) {
+          result += "Nilai While saat ini " + q + "<br>";
+          q++;
+        }
+        outputDiv.innerHTML = result;
+      </script>
+    </div> -->
+
+    <!-- <div id="data2">
+      <script>
+        var k = 0;
+        do {
+          k;
+          console.log("Do while: Saya bernilai " + k);
+          k++;
+        } while (k < 5);
+
+        // ingin menampilkan output do while loop
+        const outDiv = document.getElementById("data2");
+        let o = 0;
+        let hasil = "";
+
+        do {
+          hasil += "Nilai Do While saat ini " + o + "<br>";
+          o++;
+        } while (o < 5);
+
+        outDiv.innerHTML = hasil;
+      </script>
+    </div> -->
+
+    <!-- <div id="data">
+      <script>
+        // if, else, else if
+        var lampu = "merah";
+
+        if (lampu == "merah") {
+          console.log("Lampu Merah");
+        } else if (lampu == "kuning") {
+          console.log("Lampu Kuning");
+        } else if (lampu == "hijau") {
+          console.log("Lampu Hijau");
+        } else {
+          console.log("Tidak ada Lampu");
+        }
+
+        // switch
+        switch (lampu) {
+          case "merah":
+            document.getElementById("data").innerHTML = "Lampu Merah";
+            console.log("Lampu Merah");
+            break;
+          case "kuning":
+            document.getElementById("data").innerHTML = "Lampu Kuning";
+            console.log("Lampu Kuning");
+            break;
+          case "Hijau":
+            document.getElementById("data").innerHTML = "Lampu Hijau";
+            console.log("Lampu Hijau");
+            break;
+          default:
+            document.getElementById("data").innerHTML = "Tidak ada Lampu";
+            console.log("Tidak ada Lampu");
+            break;
+        }
+      </script>
+    </div> -->
+
+    <!-- <div id="data">
+      <script>
+        function kalikanAngka(angka1, angka2) {
+          console.log("Proses Penghitungan " + angka1 + " dan " + angka2);
+          return angka1 * angka2;
+        }
+
+        document.getElementById("data").innerHTML = kalikanAngka(5, 20);
+      </script>
+    </div> -->
+
+    <!-- <div id="data">
+        <div id="mobil"></div>
+        <div id="motor"></div>
+        <script>
+            fungsiMobil();
+            function fungsiMobil()
+            {
+                var namaMobil = "Avanza";
+                var namaMotor = "Beat";
+
+                document.getElementById("mobil").innerHTML = "Pemanggilan dalam Fungsi "+namaMobil;
+                document.getElementById("motor").innerHTML = "Pemanggilan diluar Fungsi "+namaMotor;
+            }
+        </script>
+    </div> -->
+
+    <!-- <div id="data">
+      <script>
+        // cara inisialisasi array
+        var mobil = ["avanza", "agya", "ayla"];
+        var mobil = new Array("avanza", "agya", "ayla");
+        // mengakses data array(1)
+        var mobil = ["avanza", "agya", "ayla"];
+        console.log(mobil[0]); // Output: "avanza"
+        // mengubah data array
+        var mobil = ["avanza", "agya", "ayla"];
+        mobil[0] = "fortuner";
+        console.log(mobil[0]); // Output: "fortuner"
+        // mencari banyak nya array
+        var mobil = ["avanza", "agya", "ayla"];
+        mobil.length; // Output: 3
+        // mengakses data array(2)
+        var mobil = ["avanza", "agya", "ayla"];
+        var mobilPertama = mobil[0]; // Output: "avanza"
+        var mobilTerakhir = mobil[mobil.length - 1]; // Output: "ayla"
+        /// METODE PADA ARRAY
+        // mengubah array menjadi String (.toString)
+        var mobil = ["avanza", "agya", "ayla"];
+        console.log(mobil.toString()); // Output: "avanza, agya, ayla"
+        // mengubah array menjadi String (.join)
+        var mobil = ["avanza", "agya", "ayla"];
+        console.log(mobil.join(" * ")); // Output: "avanza * agya * ayla"
+        // men-"copot" data dari array (.pop)
+        var mobil = ["avanza", "agya", "ayla"];
+        mobil.pop(); // mencopot "agya" dari array
+        var mobilku = mobil.pop(); // mencopot "agya" dari array mobilku
+        // me-masukkan data dari array (.push)
+        var mobil = ["avanza", "agya", "ayla"];
+        mobil.push("fortuner"); // memasukkan "fortuner" ke array mobil
+        var mobilku = mobil.push(); // memasukkan "fortuner" dari array mobil dan mengembalikan panjang dari array
+        // menggabungkan dua array (.concat)
+        var mobilMahal = ["fortuner", "lamborghini"];
+        var mobilBudget = ["avanxa", "agya", "ayla"];
+
+        var mobil = mobilBudget.concat(mobilMahal);
+        // menggabungkan 3 array (.concat)
+        var mobilMahal = ["fortuner", "lamborghini"];
+        var mobilBudget = ["avanxa", "agya", "ayla"];
+        var motor = ["verza", "CB 150R", "megapro"];
+
+        var kendaranBermotor = mobilBudget.concat(mobilMahal, motor);
+        /// ITERASI PADA ARRAY
+        // iterasi data array dengan for
+        var mobil = ["avanza", "agya", "ayla"];
+        var teks, i;
+
+        teks = "<ul>";
+        for (i = 0; i < mobil.length; i++) {
+          teks += "<li>" + mobil[i] + "</li>";
+        }
+
+        teks += "</ul>";
+
+        // iterasi data dari array dengan .forEach
+        var mobil = ["avanza", "agya", "ayla"];
+        var teks, i;
+
+        teks = "<ul>";
+        mobil.forEach(funsiMobil);
+        teks += "</ul>";
+
+        function fungsiMobil(value) {
+          teks += "<li>" + value + "/li>";
+        }
+
+        // iterasi menggunakan metode .map
+        var nomor1 = [45, 4, 9, 16, 25];
+        var nomor2 = nomor1.map(kalikanDenganDua);
+
+        function kalikanDenganDua(value, index, array) {
+          return value * 2;
+        }
+
+
+
+      </script>
+    </div> -->
+  
+    <!-- <div id="data">
+      <div id="divid"></div>
+      <div id="dividx"></div>
+      <script>
+        // var mobil = ["Avanza", "Agya", "Ayla","Fortuner","BMW", "Kijang"];
+        // console.log(mobil[0]);
+        // document.getElementById("divid").innerHTML = mobil[0];
+        // mobil[0] = "fortuner";
+        // console.log(mobil[0]);
+        // document.getElementById("divid").innerHTML = mobil[0]; 
+        // console.log(mobil.length);
+        // document.getElementById("divid").innerHTML = "Jumlah Elemen Array " +mobil.length; 
+        // var mobilPertama = mobil[0];
+        // var mobilTerakhir = mobil[mobil.length - 1];
+        // console.log("Mobil Pertama adalah "+ mobilPertama);
+        // console.log("Mobil Terakhir adalah "+ mobilTerakhir);
+        // document.getElementById("divid").innerHTML = "Mobil Pertama adalah " + mobilPertama;
+        // document.getElementById("dividx").innerHTML = "Mobil Terakhir adalah " + mobilTerakhir;
+        // var mobil = ["Avanza", "Agya", "Ayla"];
+        // var buah = ["pisang", "pepaya", "rambutan"];
+        // console.log("Saya telah memiliki banyak mobil antara lain "+ mobil.toString());
+        // document.getElementById("divid").innerHTML = "Saya suka buah-buahan "+ buah.toString();
+        // var mobil = ["Avanza", "Agya", "Ayla"];
+        // var buah = ["pisang", "pepaya", "rambutan"];
+        // console.log("Saya telah memiliki banyak mobil antara lain "+ mobil.join(" * "));
+        // document.getElementById("divid").innerHTML = "Saya suka buah-buahan "+ buah.join(" dan ");
+        // var mobil = ["Avanza", "Agya", "Ayla"];
+        // mobil.pop();
+        // document.getElementById("divid").innerHTML = mobil;
+        // mobil.push("fortuner");
+        // console.log("Saya telah memiliki banyak mobil antara lain "+ mobil.join(" dan "));
+        // var mobilMahal = ["fortuner", "Lamborghini"];
+        // var mobilBudget = ["Avanza", "Agya", "Ayla"];
+        // var motor = ["verza", "CBR", "megapro"];
+        // var mobil = mobilBudget.concat(mobilMahal, motor);
+        // document.getElementById("divid").innerHTML = mobil;
+        // var mobil = ["Avanza", "Agya", "Ayla"];
+        // var teks, i;
+        // teks = "<ul>";
+          
+        //   for(i = 0; i < mobil.length; i++) {
+        //     teks += "<li>" + mobil[i] + "</li>";
+        //   }
+        //   teks += "</ul>";
+        //   document.getElementById("divid").innerHTML = teks;
+        
+        // var mobil = ["Avanza", "Agya", "Ayla"];
+        // var teks, i;
+        // teks ="<ul>";
+        // mobil.forEach(fungsiMobil)
+        // teks += "</ul>";
+        // function fungsiMobil(value) {
+        //   teks += "<li>"+value+"</li>";
+        // }
+        // document.getElementById("divid").innerHTML = teks;
+        
+        // var nomor1 = [4, 9, 16, 25];
+        // var nomor2 = nomor1.map(kaliDua);
+
+        // function kaliDua(value,index,array) 
+        // {
+        //   return value * 2;
+        // }
+        // console.log(nomor2);
+        // document.getElementById("divid").innerHTML = nomor2;
+      </script>
+    </div> -->
+    
+    
+  </body>
+</html>
